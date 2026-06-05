@@ -1,0 +1,3 @@
+[submodule "oficinas/GlowUP Garden/v2"]
+	path = oficinas/GlowUP Garden/v2
+	url = https://github.com/esp32-lab-iot/GlowUP-Plant.git
