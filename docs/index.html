@@ -2,24 +2,211 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NuRIA - IFSP</title>
+
     <style>
-        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: auto; padding: 40px; color: #333; }
-        header { border-bottom: 2px solid #27ae60; padding-bottom: 20px; }
-        h1 { color: #27ae60; }
-        .btn { background: #27ae60; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
+            color: #333;
+            background-color: #f7f9f8;
+        }
+
+        header {
+            border-bottom: 3px solid #27ae60;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #27ae60;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            color: #1f7a45;
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #1f7a45;
+            margin-bottom: 5px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        .subtitulo {
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .btn {
+            display: inline-block;
+            background: #27ae60;
+            color: white;
+            padding: 12px 22px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #219150;
+        }
+
+        ol {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .pesquisadores {
+            display: grid;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .pesquisador {
+            border-left: 4px solid #27ae60;
+            padding: 15px;
+            background-color: #f7f9f8;
+            border-radius: 6px;
+        }
+
+        .pesquisador h3 {
+            margin-top: 0;
+            color: #1f7a45;
+        }
+
+        .pesquisador p {
+            margin: 6px 0;
+            text-align: left;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ccc;
+            font-size: 0.9em;
+            color: #666;
+            text-align: center;
+        }
+
+        footer p {
+            text-align: center;
+        }
     </style>
 </head>
+
 <body>
     <header>
-        <h1>NuRIA - Núcleo de Robótica e IA</h1>
-        <p>Instituto Federal de São Paulo (IFSP)</p>
+        <h1>NuRIA - Núcleo de Robótica e Inteligência Artificial</h1>
+        <p class="subtitulo">Instituto Federal de São Paulo (IFSP) - Campus Hortolândia</p>
     </header>
+
     <main>
-        <h2>Bem-vindo</h2>
-        <p>Este é o portal oficial do núcleo. Aqui você encontrará documentações, projetos e resultados de nossas pesquisas em Robótica, Sistemas Embarcados e Inteligência Artificial.</p>
-        <br>
-        <a href="https://github.com/NuRIA-IFSP/nuria-ifsp" class="btn">Acessar Repositório de Códigos</a>
+        <section class="card">
+            <h2>Bem-vindo</h2>
+
+            <p>
+                Este é o portal do NuRIA, o Núcleo de Robótica e Inteligência Artificial do IFSP.
+                Aqui você encontrará documentações, projetos, códigos, materiais didáticos e resultados
+                relacionados às atividades de pesquisa, desenvolvimento e ensino em Robótica, Sistemas
+                Embarcados e Inteligência Artificial.
+            </p>
+
+            <a href="https://github.com/NURIA-IFSP/nuria-ifsp" class="btn">
+                Acessar Repositório de Códigos
+            </a>
+        </section>
+
+        <section class="card">
+            <h2>Sobre o NuRIA</h2>
+
+            <p>
+                Sistemas robóticos inteligentes são uma realidade na sociedade em aplicações industriais
+                e de automação, na indústria 4.0, em veículos autônomos e cidades inteligentes, na medicina,
+                em sistemas de aprendizagem de máquinas e muitos outros.
+            </p>
+
+            <p>
+                O desenvolvimento de soluções com estas tecnologias envolve estudos em áreas distintas,
+                como teoria e sistemas de controle, sistemas eletrônicos embarcados, computação, sistemas
+                operacionais para robótica, inteligência artificial, sistemas mecânicos e outras.
+            </p>
+
+            <p>
+                O perfil multidisciplinar e verticalizado do IFSP favorece a sinergia entre diferentes
+                áreas de pesquisa e a realização de pesquisas aplicadas em diferentes níveis.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Linhas de Pesquisa</h2>
+
+            <ol>
+                <li>Programação e simulação robótica</li>
+                <li>ROS - Robotic Operational Systems</li>
+                <li>Veículos autônomos</li>
+                <li>Inteligência artificial e machine learning</li>
+                <li>Projeto mecânico e dinâmica de robôs</li>
+                <li>Soft robotics</li>
+                <li>Eletrônica embarcada em sistemas robóticos</li>
+                <li>Robótica educacional</li>
+                <li>Sistemas de Controle</li>
+            </ol>
+        </section>
+
+        <section class="card">
+            <h2>Pesquisadores Cadastrados</h2>
+
+            <p>
+                A equipe do NuRIA é composta por pesquisadores, docentes, estudantes e colaboradores
+                envolvidos em projetos de Robótica, Sistemas Embarcados, Inteligência Artificial,
+                Controle e áreas relacionadas.
+            </p>
+
+            <div class="pesquisadores">
+                <div class="pesquisador">
+                    <h3>Nome do pesquisador 1</h3>
+                    <p><strong>Área de atuação:</strong> Robótica, Inteligência Artificial e Sistemas Embarcados.</p>
+                    <p><strong>Vínculo:</strong> IFSP - Campus Hortolândia.</p>
+                </div>
+
+                <div class="pesquisador">
+                    <h3>Nome do pesquisador 2</h3>
+                    <p><strong>Área de atuação:</strong> Sistemas de Controle, Automação e Robótica.</p>
+                    <p><strong>Vínculo:</strong> IFSP - Campus Hortolândia.</p>
+                </div>
+
+                <div class="pesquisador">
+                    <h3>Nome do pesquisador 3</h3>
+                    <p><strong>Área de atuação:</strong> Inteligência Artificial, Machine Learning e Computação Aplicada.</p>
+                    <p><strong>Vínculo:</strong> IFSP - Campus Hortolândia.</p>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <p>NuRIA - Núcleo de Robótica e Inteligência Artificial | IFSP - Campus Hortolândia</p>
+    </footer>
 </body>
 </html>
